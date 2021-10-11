@@ -4,7 +4,7 @@ import os
 from os.path import join, dirname, realpath
 from flask.wrappers import JSONMixin
 from flask_cors import CORS, cross_origin
-import script
+#import script
 import base64
 import io
 
@@ -48,10 +48,10 @@ def get_files(path):
 def scriptLog():
     return "Script executed successfully"
 
-@app.route('/runscript/<int:no>',methods = ['GET','POST'])
-def dynamic_page(no):
-    detes = script.all_search(no)
+#@app.route('/runscript/<int:no>',methods = ['GET','POST'])
+#def dynamic_page(no):
+#    detes = script.all_search(no)
     #script.all_search(1)
-    response = make_response(scriptLog(), 200)
-    response.mimetype = "text/plain"
-    return response
+#    response = make_response(scriptLog(), 200)
+#    response.mimetype = "text/plain"
+#    return response
